@@ -1,0 +1,84 @@
+<!--视频框居左，列表居右-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+        <title>视频网站</title>
+       <!--这是视频框水平居中代码 <style>
+            .filmvideo{
+
+            margin: 0 auto;
+
+            width: 720px;
+
+            height: 480px;
+
+            }
+        </style>-->
+    </head>
+    <body>
+    <div style="width: 100%;">
+    <div style="float: left;width: 60%;">
+    <video controls="controls" class="video" width=100% height="480" src="{{myurl}}"></video>
+    </div>
+    <div style="flex: 1;"></div>
+    <div style="width:38%;height:480px;float:right;overflow: scroll;">
+    <h4>一年级</h4>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        数学上册：
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive['yaoqiu']}}">{{moive['title']}}</a>
+        {%endfor%} 
+    </p>
+    </div>
+    </div>
+    </body>
+</html>

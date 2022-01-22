@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/>
+        <title>藏马学堂-语文</title>
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                height: 100%;
+            }
+            #d1 {
+            width: 100%;
+            height: 5%;
+            display: table;
+            text-align:center;
+        }
+        #d1 div{
+            width:100%;
+            height:100%;
+            display :table-row;
+        }
+
+            #d1 div a{
+                font-size: 30px;
+                height: 100%;
+                width: 30%;
+                display: table-cell;
+                vertical-align: middle;
+                text-decoration: none;
+            }
+
+        </style>
+       <!--这是视频框水平居中代码 <style>
+            .filmvideo{
+
+            margin: 0 auto;
+
+            width: 720px;
+
+            height: 480px;
+
+            }
+        </style>-->
+    </head>
+    <body>
+    <div style="width: 100%;height:45%">
+    <video controls="controls" class="video" width=100% height=100% src="{{myurl}}"></video>
+    </div>
+    <div id="d1">
+    <div >
+    <a href="/" >数学</a>
+    <a href="/index1" >语文</a>
+    <a href="/index2">英语</a>
+    </div>
+    </div>
+    <div style="width:100%;height:50%;overflow: scroll;">
+        <h4>一年级</h4>
+        <p>
+            语文上册：
+            {% for moive1 in moives1 %}
+            <a href="{{ moive1['yaoqiu']}}">{{moive1['title']}}</a>
+            {%endfor%} 
+        </p>
+        <p>
+            语文下册：
+            {% for moive2 in moives2 %}
+            <a href="{{ moive2['yaoqiu']}}">{{moive2['title']}}</a>
+            {%endfor%} 
+        </p>
+        <h4>二年级</h4>
+        <p>
+            语文上册：
+            {% for moive3 in moives3 %}
+            <a href="{{ moive3['yaoqiu']}}">{{moive3['title']}}</a>
+            {%endfor%} 
+        </p>
+        <p>
+            语文下册：
+            {% for moive4 in moives4 %}
+            <a href="{{ moive4['yaoqiu']}}">{{moive4['title']}}</a>
+            {%endfor%} 
+        </p>
+        <p>
+        <h4>三年级</h4>
+            语文上册：
+            {% for moive5 in moives5 %}
+            <a href="{{ moive5['yaoqiu']}}">{{moive5['title']}}</a>
+            {%endfor%} 
+        </p>
+        <p>
+            语文下册：
+            {% for moive6 in moives6 %}
+            <a href="{{ moive6['yaoqiu']}}">{{moive6['title']}}</a>
+            {%endfor%} 
+        </p>
+   
+    <h4>四年级</h4>
+    <p>
+        语文上册：
+        {% for moive7 in moives7 %}
+        <a href="{{ moive7['yaoqiu']}}">{{moive7['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        语文下册：
+        {% for moive8 in moives8 %}
+        <a href="{{ moive8['yaoqiu']}}">{{moive8['title']}}</a>
+        {%endfor%} 
+    </p>
+    <h4>五年级</h4>
+    <p>
+        语文上册：
+        {% for moive9 in moives9 %}
+        <a href="{{ moive9['yaoqiu']}}">{{moive9['title']}}</a>
+        {%endfor%} 
+    </p>
+    <p>
+        语文下册：
+        {% for moive10 in moives10 %}
+        <a href="{{ moive10['yaoqiu']}}">{{moive10['title']}}</a>
+        {%endfor%} 
+        {% for moive in moives %}
+        <a href="{{ moive10['yaoqiu']}}">{{moive10['title']}}</a>
+        {%endfor%} 
+    </p>
+
+    <h4>六年级</h4>
+    <p>
+        语文上册：
+        {% for moive11 in moives11 %}
+        <a href="{{ moive11['yaoqiu']}}">{{moive11['title']}}</a>
+        {%endfor%}
+    </p>
+    <p>
+        语文下册：
+        {% for moive12 in moives12 %}
+        <a href="{{ moive12['yaoqiu']}}">{{moive12['title']}}</a>
+        {%endfor%}
+    </p>
+    </div>
+    </body>
+</html>
