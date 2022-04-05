@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6-alpine
 MAINTAINER Nar Kumar Chhantyal "nkchhantyal@gmail.com"
 RUN apt update && apt install python-dev -y
 COPY . /app
